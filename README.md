@@ -78,7 +78,7 @@ For arrays with dimension higher than one, you need to know the convention for s
 
 To obtain 100% of the marks in this lab, your `CubeStats` subroutine must be able to correctly handle arrays of dimensions 1, 2, and 3\. If you are only able to handle these three cases, you must print an error message when the dimension passed to `CubeStats` is higher than 3.
 
-You get 20% bonus marks if your `CubeStats` subroutine correctly handles *k_*-dimensional arrays for any positive integer *k*.
+You get 20% bonus marks if your `CubeStats` subroutine correctly handles *k*-dimensional arrays for any positive integer *k*.
 
 You are given a [main program](resources/code/main-row-first.s) that does the following:
 1. Reads a *k*-dimensional array from a file.

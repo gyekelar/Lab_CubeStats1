@@ -56,7 +56,7 @@ The following figure illustrates how `CubeStats` works on a single-dimensional a
   <img alt="Single Dimension Example" src="resources/imgs/One-D-example.jpg" width=80%/>
 </p>
 
-Lets consider a call to `CubeStats` where the `corner` points to the position indicated in the figure, i.e., the value of `$a0` is `0x10001004`. The following table shows examples of calls to `CubeStats` to illustrate how it works. In the first example, the only value is `3`, so the average is `3`, and the range is `3 - 3 = 0`. In example 2, the average of (`3, -1, 1)` is of course `1` and the range is `3-(-1) = 4`
+Lets consider a call to `CubeStats` where the `corner` points to the position indicated in the figure, i.e., the value of `$a0` is `0x10001004`. The following table shows examples of calls to `CubeStats` to illustrate how it works. In the first example, the only value is `3`, so the average is `3`, and the range is `3 - 3 = 0`. In example 2, the average of (`3, -1, 1)` is `1`, and the range is `3-(-1) = 4`.
 
 | Example | Function Call | Analyzed Cube | Return Values |
 | --- | :---: | :---: | :---: |

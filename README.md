@@ -81,12 +81,13 @@ To obtain 100% of the marks in this lab, your `CubeStats` subroutine must be abl
 You get 20% bonus marks if your `CubeStats` subroutine correctly handles *k*-dimensional arrays for any positive integer *k*.
 
 You are given a [main program](resources/code/main-row-first.s) that does the following:
+
 1. Reads a *k*-dimensional array from a file.
 1. Places the values of the elements of the array in memory following the row-major layout.
 1. Reads descriptions of cubes that appear in the file immediately after the array. For each cube, it:
-    1. initializes three global variables: `min`, `max`, and `total` (see below);
-    1. calls your `CubeStats` subroutine for that cube;
-    1. prints the values returned by `CubeStats`.
+ 1. initializes three global variables: `min`, `max`, and `total` (see below);
+ 1. calls your `CubeStats` subroutine for that cube;
+ 1. prints the values returned by `CubeStats`.
 
 **Reading and understanding this main program is part of the assignment.**
 

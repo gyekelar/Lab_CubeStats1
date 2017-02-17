@@ -127,7 +127,7 @@ Here is a [test generator](resources/code/CubeStatsTestGenerator.py), written in
 ## Marking Guide
 Here is the [mark sheet](MarkSheet.txt) used for grading. Assignments that are too short to be adequately judged for code quality will be given a zero. In particular, your submission will be evaluated as follows:
 * 10% for code cleanliness, readability, and comments
-* 10% for proper use of a stack frame and frame pointer (if needed)
+* 10% for proper use of stack loads or stores (if needed)
 * 80% for calculating correct ranges and statistics for dimensions up to 3
 * 20% bonus for calculating correct ranges and statistics for dimensions 4 and up
 

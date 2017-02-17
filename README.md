@@ -62,7 +62,7 @@ Lets consider a call to `CubeStats` where the `corner` points to the position in
 | --- | :---: | :---: | :---: |
 | 1 | `CubeStats(0x10001004, 1, 1, 7)` | `[ 3 ]` | `$v0 = 0`, `$v1 = 3` |
 | 2 | `CubeStats(0x10001004, 3, 1, 7)` | `[3, -1 , 1]` | `$v0 = 4`, `$v1 = 1` |
-| 3 | `CubeStats(0x10001004, 5, 1, 7)` | `[3, -1, 1, 4, -5]` | `$v0 = 9`, `$v1 = 1` |
+| 3 | `CubeStats(0x10001004, 5, 1, 7)` | `[3, -1, 1, 4, -5]` | `$v0 = 9`, `$v1 = 0` |
 
 For arrays with dimension higher than one, you need to know the convention for storing the array in memory. The two most-used conventions are *row major* and *column major*. These names are derived from the layout of a two dimensional array. In a row-major storage, used in the C programming language, all the elements of a row appear in sequence in memory before any elements of subsequent rows. In a column-major storage, used in the Fortran programming language, all the elements of a column appear in sequence in memory before any elements of subsequent columns.
 

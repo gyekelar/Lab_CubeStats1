@@ -122,6 +122,7 @@ Here is a [test generator](resources/code/CubeStatsTestGenerator.py), written in
 
 ## Resources
 * Slides used for in-class introduction of the lab ([.pdf](resources/slides/Lab_CubeStats1_Class_pres.pdf))
+* Slides used for in-lab introduction of the lab ([.pdf](resources/slides/Lab_CubeStats1_Lab_pres.pdf))
 
 ## Marking Guide
 Here is the [mark sheet](MarkSheet.txt) used for grading. Assignments that are too short to be adequately judged for code quality will be given a zero. In particular, your submission will be evaluated as follows:

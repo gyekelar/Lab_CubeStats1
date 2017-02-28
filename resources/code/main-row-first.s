@@ -96,11 +96,14 @@ ReadCube:
 	move     $t4, $v0		# $t4 <-- cubed
 	blt	 $t4, $0, ExitMain	# if(cubed<0) ExitMain
 	move     $a0, $s1		# $a0 <-- size
-	move     $a1, $t2		# $a1 <-- d
-	jal	 power			# $v0 <-- power(size,d)
-	mul	 $t3, $t4, $v0	        # $t3 <-- cubed*power(size,d)
+	#move     $a1, $t2		# $a1 <-- d
+	# Bug fixed Feb. 27 2017
+	sub      $a1, $s0, $t2		# $a1 <-- dimension - d
+	addi     $a1, $a1, -1       # $a1 <-- dimension - d - 1	
+	jal	 power			# $v0 <-- power(size,dimension - d - 1)
+	mul	 $t3, $t4, $v0	        # $t3 <-- cubed*power(size,dimension - d - 1)
 	sll      $t3, $t3, 2            # $t3 <-- 4*$t3 (offset)
-	add	 $s3, $s3, $t3	        # first = first + cubed*power(size,d)
+	add	 $s3, $s3, $t3	        # first = first + cubed*power(size,dimension - d - 1)
 	add	 $t2, $t2, 1	        # d <-- d + 1
 	blt	 $t2, $s0, ReadCube     # if(d<dimension) ReadCube
 
